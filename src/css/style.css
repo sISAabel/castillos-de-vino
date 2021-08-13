@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinze+Decorative:wght@400;900&family=Roboto+Slab&display=swap');
 :root {
-  --fontTitle: 'Cinzel Decorative', cursive;
   --fontCont: 'Roboto Slab', serif;
   --wine: rgb(79, 5, 9);
   --blackWine: rgb(30, 8, 10);
@@ -39,19 +38,10 @@ header {
   align-content: center;
 }
 .logo-img {
-  width: 5vw;
+  width: 20vw;
 }
 .logo-img img {
   width: 100%;
-  -webkit-filter: drop-shadow(3px 3px 3px rgb(156, 147, 147));
-  filter: drop-shadow(3px 3px 3px rgb(190, 188, 188));
-}
-.logo h1 {
-  font-family: var(--fontTitle);
-  color: var(--white);
-  font-size: 2.2em;
-  font-weight: 900;
-  margin-left: -0.5em;
 }
 .dropdown {
   position: relative;
@@ -101,7 +91,7 @@ header {
 }
 .bandera::before {
   content: "";
-  padding-left: 2em;
+  padding-left: 2   em;
   width: 2em;
   height: 2em;
 }
@@ -219,6 +209,9 @@ form {
   color: var(--blackWine);
   font-weight: bolder;
 }
+table.form {
+  width: 100%;
+}
 form input, textarea, option, select {
   background-color: rgba(68, 24, 24, 0.548);
   border-radius: 10px;
@@ -232,7 +225,7 @@ legend {
 input { 
   font-family: var(--fontTitle);
 }
-::placeholder {
+::placeholder, option, select, #date, #hour {
   color: var(--wine);
   font-family: var(--fontCont);
 }
