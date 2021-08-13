@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinze+Decorative:wght@400;900&family=Roboto+Slab&display=swap');
+:root {
+  --fontTitle: 'Cinzel Decorative', cursive;
+  --fontCont: 'Roboto Slab', serif;
+  --wine: rgb(79, 5, 9);
+  --blackWine: rgb(30, 8, 10);
+  --white: rgb(255, 255, 255);
+  --black: rgb(0, 0, 0);
+}
+*, *::after, *::before {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: var(--font);
+}
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--fontCont);
+}
+header {
+  width: 100vw;
+  padding: 1em;
+  background-color: var(--blackWine);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+.logo-img {
+  width: 5vw;
+}
+.logo-img img {
+  width: 100%;
+  -webkit-filter: drop-shadow(3px 3px 3px rgb(156, 147, 147));
+  filter: drop-shadow(3px 3px 3px rgb(190, 188, 188));
+}
+.logo h1 {
+  font-family: var(--fontTitle);
+  color: var(--white);
+  font-size: 2.2em;
+  font-weight: 900;
+  margin-left: -0.5em;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropBtn {
+  background-color: var(--wine);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: var(--white);
+  padding: 1.5em;
+  font-size: 1em;
+  border: none;
+  cursor: pointer;
+  height: 2.5em;
+  border-radius: 10px;
+}
+.dropBtn:hover, .dropBtn:focus {
+  background-color:  var(--blackWine);
+  transition: 0.1s;
+}
+.dropBtn i {
+  margin-left: 0.5em;
+}
+.dropdown-cont {
+  display: none;
+  position: absolute;
+  background-color: var(--wine);
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  padding: 1em;
+  border-radius: 10px;
+}
+.dropdown-cont a {
+  color: var(--white);
+  padding: 0.8em 1em;
+  text-decoration: none;
+  display: block;
+  border-radius: 10px;
+}
+.dropdown-cont a:hover {
+  background-color: var(--blackWine);
+  transition: 0.1s;
+}
+.bandera::before {
+  content: "";
+  padding-left: 2em;
+  width: 2em;
+  height: 2em;
+}
+.es {
+  background-image: url(https://www.countryflags.io/es/shiny/32.png);
+  background-repeat: no-repeat;
+  background-position: 3% 50%;
+}
+.de {
+  background-image: url(https://www.countryflags.io/de/shiny/32.png);
+  background-repeat: no-repeat;
+  background-position: 3% 50%;
+}
+.en {
+  background-image: url(https://www.countryflags.io/gb/shiny/32.png);
+  background-repeat: no-repeat;
+  background-position: 3% 50%;
+}
+.mostrar {
+  display: block;
+}
+.menu {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  background-color: var(--black);
+  padding: 1.5em;
+}
+.menu a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 1.5em;
+}
+.menu a:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+  text-shadow: 3px -3px 3px rgba(224, 0, 0, 0.76);
+  border-bottom: var(--wine) 3px solid;
+}
+.cont {
+  height: 100vh;
+}
+#openPage {
+  width: 100%;
+  height: 100%; 
+  background: rgb(221,221,221);
+  background: radial-gradient(circle, rgba(221,221,221,1) 0%, rgba(173,173,173,1) 100%);
+  background-image: url(../img/bg.png);
+}
+.cont-iframe {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+}
+.about {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+  gap: 3em;
+  padding: 1em;
+}
+.about-info {
+  width: 60%;
+}
+.title {
+  text-align: center;
+  font-size: 3em;
+  color: var(--wine);
+  font-weight: 700;
+}
+.about-imgs {
+  width: 20%;
+}
+.card-img {
+  background: rgb(83,8,8);
+  background: radial-gradient(circle, rgba(83,8,8,1) 0%, rgba(0,0,0,1) 100%); 
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center; 
+  height: 40vh;
+  box-shadow: 3px 8px 14px 0px rgba(0,0,0,0.75);  
+}
+.card-img img {
+  width: 80%;
+}
+#img1, #img3 {
+  transform: rotate(15deg);
+}
+#img2, #img4 {
+  transform: rotate(-15deg);
+  margin-top: -2em;
+}
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} 
+form {
+  padding: 2em;
+  background: rgba(49, 28, 28, 0.45);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4.5px);
+  -webkit-backdrop-filter: blur(4.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  font-size: 1em;
+  color: var(--blackWine);
+  font-weight: bolder;
+}
+form input, textarea, option, select {
+  background-color: rgba(68, 24, 24, 0.548);
+  border-radius: 10px;
+  padding: 1em;
+  width: 100%;
+  border: none;
+}
+legend {
+  font-size: 1.5em;
+}
+input { 
+  font-family: var(--fontTitle);
+}
+::placeholder {
+  color: var(--wine);
+  font-family: var(--fontCont);
+}
+.buttons {
+  width: 100%;
+}
+.button {
+  background-color: var(--wine);
+  color: var(--white);
+  font-weight: 900;
+}
+.button:hover {
+  transform: scale(1.1);
+  transition: 0.5s; 
+}
+.service {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+.service-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+.service-card {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  gap: 1em;
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 1.0px );
+  -webkit-backdrop-filter: blur( 1.0px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  padding: 1em;
+}
+.service-info {
+  width: 60%;
+}
+.sub-title {
+  font-size: 1.5em;
+}
+.service-img {
+  width: 38%;
+}
+.service-img img {
+  width: 100%;
+  border-radius: 10px;
+}
+footer {
+  background-color: var(--blackWine);
+  color: var(--white);
+  width: 100vw;
+  padding: 2em;
+  display: flex;
+  gap: 2em;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+.timetable table, .timetable tr, .timetable th, .timetable td {
+  border: var(--wine) solid 3px;
+  border-collapse: collapse;
+  text-align: center;
+} 
+td, th {
+  padding: 0.5em;
+}
+.location {
+  display: flex;
+  gap: 2em;
+}
+.location iframe {
+  width: 20vw;
+  height: 20vh;
+  border-radius: 10px;
+}
+@media (max-width:768px) {
+  header {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .logo {
+    justify-content: center;
+  }
+  h1 {
+    text-align: center;
+  }
+  .menu a {
+    font-size: 1em;
+  }
+  .about {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+  }
+  .about-info {
+    width: 80%;
+  }
+  .about-imgs {
+    display: flex;
+  }
+  .card-img {
+    height: 30vh;
+    width: 100vw;
+  }
+  .service-card {
+    flex-direction: column-reverse;
+  }
+  .service-info {
+    width: 80%;
+    text-align: justify;
+  }
+  .service-img {
+    width: 60%;
+  }
+  footer {  
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 2em;
+  }
+  .location {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .location iframe {
+    width: 80vw;
+  }
+}

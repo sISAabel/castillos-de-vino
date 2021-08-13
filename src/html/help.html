@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../img/logo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;900&family=Roboto+Slab&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/2e9cad6e92.js" crossorigin="anonymous"></script>
+  <title>Castillos de Vino</title>
+</head>
+<body>
+  <div class="cont-iframe">
+    <div id="contact">
+      <h1 class="title">¿Podemos Ayudarle?</h1>
+      <form>
+        <fieldset>
+          <legend>Datos Personales</legend>
+          <table>
+            <tr>
+              <td>
+                <label for="name">Nombre</label>
+              </td>
+              <td>
+                <input type="text" name="name" id="name" placeholder="Sara">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="lname">Apellidos</label>
+              </td>
+              <td>
+                <input type="text" name="lname" id="lname" placeholder="Rodriguez">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="address">Dirección</label>
+              </td>
+              <td>
+                <input type="text" name="address" id="address" placeholder="Calle Lorem Ipsum">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="email">Correo Electrónico</label>
+              </td>
+              <td>
+                <input type="email" name="email" id="email" placeholder="correo@ejemplo.com">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="phone">Teléfono</label>
+              </td>
+              <td>
+                <input type="tel" name="phone" id="phone" placeholder="643999999">
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+        <fieldset>
+          <legend>Datos del Servicio deseado</legend>
+          <table>
+            <tr>
+              <td>
+                <label for="act">Servicio</label>
+              </td>
+              <td>
+                <select name="act" id="act">
+                  <option value="0">Recorrido por el Viñedo</option>
+                  <option value="1">Visita a la Bodega</option>
+                  <option value="2">Curso de Cata</option>
+                  <option value="3">Mesa del Rey</option>
+                  <option value="4">Cena Romántica</option>
+                  <option value="5">Relajación Real</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="date">Fecha de la Visita</label>
+              </td>
+              <td>
+                <input type="date" name="date" id="date">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="hour">Hora de la Visita</label>
+              </td>
+              <td>
+                <input type="time" name="hor" id="hour">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="info">Información Adicional</label>
+              </td>
+              <td>
+                <textarea name="info" id="info" cols="30" rows="10" placeholder="Su Mensaje aquí..."></textarea>
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+        <table class="buttons">
+          <tr>
+            <td>
+              <input type="reset" value="Borrar" class="button">
+            </td>
+            <td>
+              <input type="submit" value="Enviar" class="button">
+            </td>
+          </tr> 
+        </table>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

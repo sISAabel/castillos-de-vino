@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="src/img/logo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="src/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;900&family=Roboto+Slab&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/2e9cad6e92.js" crossorigin="anonymous"></script>
+  <title>Castillos de Vino</title>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <div class="logo-img">
+        <img src="src/img/logo.png" alt="logo">
+      </div>
+      <h1>Castillos de Vino</h1>
+    </div>
+    <div class="dropdown">
+      <button onclick="hacerClick()" class="dropBtn bandera es">Español<i class="fas fa-chevron-down"></i></button>
+      <div id="myDropdown" class="dropdown-cont">
+        <a href="#" class="bandera en">English</a>
+        <a href="#" class="bandera de">Deutsch</a>
+        <a href="#" class="bandera es">Español</a>
+      </div>
+    </div>
+  </header>
+  <nav class="menu">
+    <a href="src/html/reference.html" target="openPage">Nuestras Referencias</a>
+    <a href="src/html/service.html" target="openPage">Nuestros Servicios</a>
+    <a href="src/html/help.html" target="openPage">¿Podemos Ayudarle?</a>
+  </nav>
+  <div class="cont">
+    <iframe src="src/html/reference.html" name="openPage" id="openPage" frameborder="0"></iframe>
+  </div>
+  <footer>
+    <div class="timetable">
+      <table>
+        <tr>
+          <th colspan="3">Horarios</th>
+        </tr>
+        <tr>
+          <td>Lunes a Viernes</td>
+          <td>Sábados</td>
+          <td>Domingos y Festivos</td>
+        </tr>
+        <tr>
+          <td>9:00 - 18:00</td>
+          <td>10:00 - 20:00</td>
+          <td>Cerrado</td>
+        </tr>
+      </table>
+    </div>
+    <div class="location">
+      <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-16.321907043457035%2C28.48446662882974%2C-16.31828606128693%2C28.48613102347003&amp;layer=mapnik&amp;marker=28.485298829429315%2C-16.32009655237198"></iframe>
+      <table>
+        <tr>
+          <th colspan="2">Dónde Estamos?</th>
+        </tr>
+        <tr>
+          <td><i class="fas fa-phone-alt"></i></td>
+          <td>922-99-99-99</td>
+        </tr>
+        <tr>
+          <td><i class="fas fa-map-marker-alt"></i></td>
+          <td>Calle Lorem Ipsum º15</td>
+        </tr>
+      </table>
+    </div>
+  </footer>
+  <script>
+    function hacerClick() {
+      document.getElementById('myDropdown').classList.toggle('mostrar');
+    }
+  </script>
+</body>
+</html>
